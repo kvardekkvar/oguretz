@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Drink shit</title>
+<style>
+.hidden {
+  display: none;
+}
+</style>
+<script>
+
+document.addEventListener("click", addTurd);
+
+function addTurd(e){
+  t = document.getElementById('turd')
+  t.classList.remove('hidden')
+  t.style.position = 'absolute'
+  t.style.left  = e.clientX -25 +'px'
+  t.style.top  = e.clientY-25 +'px'
+  setTimeout(a => {t.classList.add('hidden')},1500)
+}
+
+
+</script>
+</head>
+<body>
+<marquee behavior='alternate' direction="right" style="color:green; font-size:30pt">
+<img src='static/cucumber.gif' width='30'/>I am a green cucumber <img src='static/cucumber.gif' width='30'/></marquee>
+
+<div style="text-align:center;"><img src='static/popov.jpg' /></div>
+
+
+<br/><br/><a href='dic/xml/dictest'> Dictionary </a>
+<br/><a href='api/'> Api doc </a>
+
+<div style="text-align:right;">Blimp Eater <br/> helterskelter <img src='static/a.png' width='17' /> horse<div style="display:none">Bots suck cock</div>fucker.o<div style="display:none">And you as well</div>rg</div>
+<button onclick='alert("Kindly go fuck yourself.")' style='float: right;margin-top:7px'>Report abuse</button>
+
+<img id='turd' class='hidden' width='50pxs' src="static/poo.png"/>
+</body>
+</html>
