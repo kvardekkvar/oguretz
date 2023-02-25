@@ -9,21 +9,6 @@
   display: none;
 }
 </style>
-<script>
-
-document.addEventListener("click", addTurd);
-
-function addTurd(e){
-  t = document.getElementById('turd')
-  t.classList.remove('hidden')
-  t.style.position = 'absolute'
-  t.style.left  = e.clientX -25 +'px'
-  t.style.top  = e.clientY-25 +'px'
-  setTimeout(a => {t.classList.add('hidden')},1500)
-}
-
-
-</script>
 </head>
 <body>
 <marquee behavior='alternate' direction="right" style="color:green; font-size:30pt">
